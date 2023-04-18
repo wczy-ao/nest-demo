@@ -1,0 +1,6 @@
+
+# POST Http://localhost:3000/girl/add HTTP/1.1
+# Get http://localhost:3000/girl/getGirlById?id=2
+GET http://localhost:3000/girl/findGirlById/1/jspang 
+// Content-Type: application/json 终端显示打印数据
+Content-Type: application/json 
