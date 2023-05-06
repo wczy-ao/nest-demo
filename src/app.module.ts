@@ -3,6 +3,7 @@ import { Module } from '@nestjs/common';
 // import { GirlService } from './girl/girl.service';
 import { GirlModule } from './girl/girl.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
+import { PostsModule } from './posts/posts.module';
 
 @Module({
   imports: [
@@ -19,6 +20,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
       synchronize: true, // 是否将实体同步到数据库
       autoLoadEntities: true, // 自动加载实体配置，forFeature()注册的每个实体都自己动加载
     }),
+    PostsModule,
   ],
   controllers: [],
   providers: [],
